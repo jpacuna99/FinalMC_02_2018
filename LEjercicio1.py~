@@ -10,7 +10,6 @@ print("-------------------------------------------------------------------------
 # 2) Imprima "A NO es menor que b" si al menos uno de los elementos de A es mayor que alguno de los elementos de B.
 
 import numpy as np
-import matplotlib.pyplot as plt
 N=10
 A=(np.random.random((N,1))*10.0)-5.0
 B=(np.random.random((N,1))*10.0)-3.0

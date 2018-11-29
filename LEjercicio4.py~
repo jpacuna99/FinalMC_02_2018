@@ -29,7 +29,8 @@ hola= fftfreq(len(t))*n
 
 
 filtrada=np.copy(fourier)
-
+plt.figure()
+plt.plot(hola,abs(fourier))
 for i in range(len(hola)):
 	if hola[i]>1000.:
 		filtrada[i]=0
@@ -41,8 +42,9 @@ for i in range(len(hola)):
 # SU GRAFICA
 plt.figure()
 plt.plot(t,amp)
+plt.figure()
 plt.plot(t,np.real(ifft(filtrada)))
-plt.savefig("filtro.pdf")
+plt.show()
 
 # Puede usar los siguientes paquetes:
 #from scipy.fftpack import fft, fftfreq, ifft
