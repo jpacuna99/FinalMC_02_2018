@@ -42,7 +42,7 @@ n_iterations = 20000
 lmax=0
 rmax=0
 cmax=0
-def estiamcion():
+
 	for i in range(2000):
 		Rnew=np.normal(R_walk[i],0.1)
 		Cnew=np.normal(C_walk[i],0.1)
